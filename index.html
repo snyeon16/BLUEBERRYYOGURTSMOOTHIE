@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>블루베리요거트스무디</title> 
+    <style>
+        @font-face {
+                font-family: 'neodgm';
+                src: url('neodgm.woff') format('woff');
+                
+            }
+        .bysimg img{
+            margin-top: 100px;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            
+        }
+        .bysimg img:hover{
+            transform:translate(0px, -100px)
+        }
+        .innerbox{width:50px;height:50px; position:absolute; background-image: url('blueberries1.png');
+    background-size:cover; margin-left:50px; margin-right:50px;}
+        .berryimg img{
+            margin-top: 100px;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+        }
+        .berryimg img:hover{
+            transform:scale(200%)
+        }
+        .words{
+            margin-left:155px;
+            margin-right: 700px;
+            margin-top:15px;
+            font-size:20px;
+            font-family: 'neodgm';
+            color: #5a20b7;
+            line-height: 1.6;
+        }
+        .titlewords{
+            margin-left:150px;
+            font-size:40px;
+            font-family: 'neodgm';
+            color: #ff5ec5;
+            text-shadow: 2px 2px #5a20b7;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+        .titlewords:hover{
+            transform:translate(0px, -20px);
+        }
+    </style>
+</head>
+<body bgcolor="#e8beeb">
+       
+       <script>
+            let step = 1;
+            function berries(){
+               const cnt = document.getElementById("newbox");
+               let inside = cnt.innerHTML;
+               inside = inside + "<div class = 'innerbox' id = 'box"+step+"'>"+"</div>";
+                cnt.innerHTML = inside;
+                const tmpbox = document.getElementById("box"+step);
+                tmpbox.style.left = parseInt(Math.random()*1500)+"px";
+                tmpbox.style.top = parseInt(Math.random()*800)+"px";
+                step = step +1;         
+               }
+               
+       </script>
+      <img src="blueberrywords.png" style="position:absolute; top:360px; left:23%; width:60%;"> 
+      <div class="bysimg">
+        <center><img src="bys.png" width="20%" onClick="berries()";></center>
+       </div>
+       <div  id = "newbox">
+       </div>
+       <div class="titlewords" style="margin-top:250px;">
+        집에서
+       </div>
+       <div class="words">
+        집에서 블루베리 요거트 스무디를 마실 수 있는 방법은 두 가지가 있다. 첫 번째 방법은 시간과 도구가 필요하다. 
+        이 두 가지가 있다면 다음으로 준비 할 것은 얼린 블루베리, 얼음, 꿀, 플레인 요거트다. 그리고 이 재료들을 섞어줄 블렌더가 포인트다. 
+        이것들만 있다면, 그저 기호에 맞게 모든 재료들을 블렌더에 넣은 뒤 갈아주면 완성이다. 두 번째 방법은 배달 앱을 사용해 근처 카페에서 배달시켜주는 것이다. 
+       </div>
+       <div class="titlewords" style="margin-top:100px;">
+        밖에서
+       </div> 
+       <div class="words" >
+        밖에서 블루베리 요거트 스무디를 먹기 위해선 마찬가지로 환경이 따라줘야 한다. 
+        첫 번째로 주변에 블루베리 요거트 스무디를 판매하는 카페가 있어야 하고, 
+        두 번째로는 맛있는 것을 먹기 위해 투자할 수 있는 소지금이 필요하다. 
+        이 두 개만 있다면, 당장 ‘블요스’를 파는 카페로 가서 주문하면 된다.  <br><br><br>
+       </div>    
+        <div style="position:absolute; left:1100px; top: 1070px" class="berryimg" >
+            <img src="blueberries2.png" width="18%">
+        </div>
+        <div style="position:absolute; left:1350px; top: 950px" class="berryimg">
+            <img src="blueberries3.png" width="30%">
+        </div>
+        <div style="position:absolute; left:1300px; top: 1280px" class="berryimg">
+            <img src="blueberries4.png" width="25%">
+        </div>
+        <div style="position:absolute; left:1150px; top: 1480px" class="berryimg" >
+            <img src="blueberries5.png" width="20%"><br><br><br><br>
+        </div>
+        <div style="position:absolute; left:250px; top: 1470px" class="berryimg" >
+            <img src="blueberries6.png" width="20%">
+        </div>
+        <div style="position:absolute; left:630px; top: 1400px" class="berryimg" >
+            <img src="blueberries7.png" width="20%">
+        </div>
+
+</body>
+</html>
